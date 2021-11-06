@@ -21,7 +21,7 @@ openapi = { path = "./openapi" }
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://api.na.bambora.com*
+All URIs are relative to *https://api.na.bambora.com/v1*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------

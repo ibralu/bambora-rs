@@ -2,6 +2,7 @@ swagger: "2.0"
 schemes:
   - https
 host: api.na.bambora.com
+basePath: "/v1"
 info:
   description: https://api.na.bambora.com
   title: Bambora Payments

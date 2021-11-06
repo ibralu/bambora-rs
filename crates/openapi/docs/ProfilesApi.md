@@ -1,6 +1,6 @@
 # \ProfilesApi
 
-All URIs are relative to *https://api.na.bambora.com*
+All URIs are relative to *https://api.na.bambora.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
