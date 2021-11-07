@@ -15,7 +15,7 @@
 pub struct Criteria {
     /// Refer to the table on this page for the searchable fields http://developer.beanstream.com/documentation/analyze-payments/search-specific-criteria/
     #[serde(rename = "field", skip_serializing_if = "Option::is_none")]
-    pub field: Option<f32>,
+    pub field: Option<i32>,
     /// URL encoded comparators such as less than, greater than, equals... Refer to the table on this page for the full list of comparators http://developer.beanstream.com/documentation/analyze-payments/search-specific-criteria/
     #[serde(rename = "operator", skip_serializing_if = "Option::is_none")]
     pub operator: Option<String>,

@@ -21,7 +21,7 @@ pub struct SearchQuery {
     pub end_date: String,
     /// Used to page the results. 1-based. This should always be 1 larger than start_row.
     #[serde(rename = "end_row")]
-    pub end_row: f32,
+    pub end_row: i32,
     /// Only accepts 2 values. Can be either 'Search' for all fields or 'TransHistoryMinimal' for a subset of the fields returned in the results.
     #[serde(rename = "name")]
     pub name: String,
@@ -30,11 +30,11 @@ pub struct SearchQuery {
     pub start_date: String,
     /// Used to page the results. 1-based
     #[serde(rename = "start_row")]
-    pub start_row: f32,
+    pub start_row: i32,
 }
 
 impl SearchQuery {
-    pub fn new(end_date: String, end_row: f32, name: String, start_date: String, start_row: f32) -> SearchQuery {
+    pub fn new(end_date: String, end_row: i32, name: String, start_date: String, start_row: i32) -> SearchQuery {
         SearchQuery {
             criteria: None,
             end_date,

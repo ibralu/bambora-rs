@@ -17,7 +17,7 @@ pub struct ProfileGetCards {
     pub card: Option<Vec<crate::models::ProfileCards>>,
     /// digits(2)
     #[serde(rename = "code", skip_serializing_if = "Option::is_none")]
-    pub code: Option<f32>,
+    pub code: Option<i32>,
     /// characters(32)
     #[serde(rename = "customer_code", skip_serializing_if = "Option::is_none")]
     pub customer_code: Option<String>,

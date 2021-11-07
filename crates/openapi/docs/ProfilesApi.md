@@ -58,7 +58,7 @@ Delete a card on the profile.
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **profile_id** | **String** | The profile id. (aka CustomerCode) | [required] |
-**card_id** | **f32** | The card id. | [required] |
+**card_id** | **i32** | The card id. | [required] |
 
 ### Return type
 
@@ -89,7 +89,7 @@ Update the details of a card on the profile.
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **profile_id** | **String** | The profile id. (aka CustomerCode) | [required] |
-**card_id** | **f32** | The card id. | [required] |
+**card_id** | **i32** | The card id. | [required] |
 **card** | [**ProfileCard**](ProfileCard.md) | The card that will be updated on the profile. | [required] |
 
 ### Return type

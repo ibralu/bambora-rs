@@ -150,7 +150,7 @@ pub async fn profiles_post(configuration: &configuration::Configuration, create_
 }
 
 /// Delete a card on the profile.
-pub async fn profiles_profile_id_cards_card_id_delete(configuration: &configuration::Configuration, profile_id: &str, card_id: f32) -> Result<crate::models::ProfileResponse, Error<ProfilesProfileIdCardsCardIdDeleteError>> {
+pub async fn profiles_profile_id_cards_card_id_delete(configuration: &configuration::Configuration, profile_id: &str, card_id: i32) -> Result<crate::models::ProfileResponse, Error<ProfilesProfileIdCardsCardIdDeleteError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -178,7 +178,7 @@ pub async fn profiles_profile_id_cards_card_id_delete(configuration: &configurat
 }
 
 /// Update the details of a card on the profile.
-pub async fn profiles_profile_id_cards_card_id_put(configuration: &configuration::Configuration, profile_id: &str, card_id: f32, card: crate::models::ProfileCard) -> Result<crate::models::ProfileResponse, Error<ProfilesProfileIdCardsCardIdPutError>> {
+pub async fn profiles_profile_id_cards_card_id_put(configuration: &configuration::Configuration, profile_id: &str, card_id: i32, card: crate::models::ProfileCard) -> Result<crate::models::ProfileResponse, Error<ProfilesProfileIdCardsCardIdPutError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

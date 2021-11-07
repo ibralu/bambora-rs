@@ -35,7 +35,7 @@ pub struct SearchRecord {
     #[serde(rename = "customer_code", skip_serializing_if = "Option::is_none")]
     pub customer_code: Option<String>,
     #[serde(rename = "message_id", skip_serializing_if = "Option::is_none")]
-    pub message_id: Option<f32>,
+    pub message_id: Option<i32>,
     #[serde(rename = "message_text", skip_serializing_if = "Option::is_none")]
     pub message_text: Option<String>,
     #[serde(rename = "product_id", skip_serializing_if = "Option::is_none")]
@@ -53,7 +53,7 @@ pub struct SearchRecord {
     #[serde(rename = "ref5", skip_serializing_if = "Option::is_none")]
     pub ref5: Option<String>,
     #[serde(rename = "row_id", skip_serializing_if = "Option::is_none")]
-    pub row_id: Option<f32>,
+    pub row_id: Option<i32>,
     #[serde(rename = "s_address1", skip_serializing_if = "Option::is_none")]
     pub s_address1: Option<String>,
     #[serde(rename = "s_address2", skip_serializing_if = "Option::is_none")]
@@ -80,7 +80,7 @@ pub struct SearchRecord {
     #[serde(rename = "trn_avs_result", skip_serializing_if = "Option::is_none")]
     pub trn_avs_result: Option<String>,
     #[serde(rename = "trn_batch_no", skip_serializing_if = "Option::is_none")]
-    pub trn_batch_no: Option<f32>,
+    pub trn_batch_no: Option<i32>,
     #[serde(rename = "trn_card_expiry", skip_serializing_if = "Option::is_none")]
     pub trn_card_expiry: Option<String>,
     #[serde(rename = "trn_card_owner", skip_serializing_if = "Option::is_none")]
@@ -91,12 +91,12 @@ pub struct SearchRecord {
     #[serde(rename = "trn_completions", skip_serializing_if = "Option::is_none")]
     pub trn_completions: Option<f32>,
     #[serde(rename = "trn_cvd_result", skip_serializing_if = "Option::is_none")]
-    pub trn_cvd_result: Option<f32>,
+    pub trn_cvd_result: Option<i32>,
     /// 2015-04-22T17:03:19.323+0000
     #[serde(rename = "trn_date_time", skip_serializing_if = "Option::is_none")]
     pub trn_date_time: Option<String>,
     #[serde(rename = "trn_id", skip_serializing_if = "Option::is_none")]
-    pub trn_id: Option<f32>,
+    pub trn_id: Option<i32>,
     #[serde(rename = "trn_ip", skip_serializing_if = "Option::is_none")]
     pub trn_ip: Option<String>,
     /// The credit card with the middle digits redacted with X's
@@ -107,15 +107,15 @@ pub struct SearchRecord {
     #[serde(rename = "trn_payment_method", skip_serializing_if = "Option::is_none")]
     pub trn_payment_method: Option<String>,
     #[serde(rename = "trn_reference", skip_serializing_if = "Option::is_none")]
-    pub trn_reference: Option<f32>,
+    pub trn_reference: Option<i32>,
     #[serde(rename = "trn_response", skip_serializing_if = "Option::is_none")]
-    pub trn_response: Option<f32>,
+    pub trn_response: Option<i32>,
     #[serde(rename = "trn_returns", skip_serializing_if = "Option::is_none")]
     pub trn_returns: Option<f32>,
     #[serde(rename = "trn_type", skip_serializing_if = "Option::is_none")]
     pub trn_type: Option<String>,
     #[serde(rename = "trn_voided", skip_serializing_if = "Option::is_none")]
-    pub trn_voided: Option<f32>,
+    pub trn_voided: Option<i32>,
 }
 
 impl SearchRecord {

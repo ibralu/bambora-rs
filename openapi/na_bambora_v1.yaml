@@ -110,7 +110,7 @@ paths:
           in: path
           name: transId
           required: true
-          type: number
+          type: integer
         - in: body
           name: payment_request
           schema:
@@ -156,7 +156,7 @@ paths:
           in: path
           name: transId
           required: true
-          type: number
+          type: integer
         - in: body
           name: return
           required: true
@@ -203,7 +203,7 @@ paths:
           in: path
           name: transId
           required: true
-          type: number
+          type: integer
         - in: body
           name: void
           required: true
@@ -509,7 +509,7 @@ paths:
           in: path
           name: cardId
           required: true
-          type: number
+          type: integer
       responses:
         "200":
           description: The Profile.
@@ -555,7 +555,7 @@ paths:
           in: path
           name: cardId
           required: true
-          type: number
+          type: integer
         - description: The card that will be updated on the profile.
           in: body
           name: card
@@ -685,14 +685,12 @@ definitions:
         format: double
         type: number
       approval:
-        format: integer
-        type: number
+        type: integer
       created:
         description: The date it was created '2015-04-22T10:03:19.323-07:00'
         type: string
       id:
-        format: integer
-        type: number
+        type: integer
       message:
         type: string
       type:
@@ -805,8 +803,7 @@ definitions:
     properties:
       field:
         description: Refer to the table on this page for the searchable fields http://developer.beanstream.com/documentation/analyze-payments/search-specific-criteria/
-        format: integer
-        type: number
+        type: integer
       operator:
         description: URL encoded comparators such as less than, greater than, equals... Refer to the table on this page for the full list of comparators http://developer.beanstream.com/documentation/analyze-payments/search-specific-criteria/
         type: string
@@ -1058,8 +1055,7 @@ definitions:
         type: array
       code:
         description: digits(2)
-        format: integer
-        type: number
+        type: integer
       customer_code:
         description: characters(32)
         type: string
@@ -1083,8 +1079,7 @@ definitions:
   ProfileResponse:
     properties:
       code:
-        format: integer
-        type: number
+        type: integer
       customer_code:
         description: the ID of the payment profile. You need to keep track of this value.
         type: string
@@ -1122,8 +1117,7 @@ definitions:
       end_row:
         default: 2
         description: Used to page the results. 1-based. This should always be 1 larger than start_row.
-        format: integer
-        type: number
+        type: integer
       name:
         description: Only accepts 2 values. Can be either 'Search' for all fields or 'TransHistoryMinimal' for a subset of the fields returned in the results.
         type: string
@@ -1133,8 +1127,7 @@ definitions:
       start_row:
         default: 1
         description: Used to page the results. 1-based
-        format: integer
-        type: number
+        type: integer
     required:
       - name
       - start_date
@@ -1165,8 +1158,7 @@ definitions:
         description: The PaymentProfile ID used in this transaction, if appropriate.
         type: string
       message_id:
-        format: integer
-        type: number
+        type: integer
       message_text:
         type: string
       product_id:
@@ -1184,8 +1176,7 @@ definitions:
       ref5:
         type: string
       row_id:
-        format: integer
-        type: number
+        type: integer
       s_address1:
         type: string
       s_address2:
@@ -1213,8 +1204,7 @@ definitions:
         description: Address Verification Service
         type: string
       trn_batch_no:
-        format: integer
-        type: number
+        type: integer
       trn_card_expiry:
         type: string
       trn_card_owner:
@@ -1226,14 +1216,12 @@ definitions:
         format: float32
         type: number
       trn_cvd_result:
-        format: integer
-        type: number
+        type: integer
       trn_date_time:
         description: 2015-04-22T10:03:19.323-07:00
         type: string
       trn_id:
-        format: integer
-        type: number
+        type: integer
       trn_ip:
         type: string
       trn_masked_card:
@@ -1244,19 +1232,16 @@ definitions:
       trn_payment_method:
         type: string
       trn_reference:
-        format: integer
-        type: number
+        type: integer
       trn_response:
-        format: integer
-        type: number
+        type: integer
       trn_returns:
         format: float32
         type: number
       trn_type:
         type: string
       trn_voided:
-        format: integer
-        type: number
+        type: integer
   SearchResult:
     properties:
       records:
@@ -1339,8 +1324,7 @@ definitions:
       custom:
         $ref: "#/definitions/Custom"
       id:
-        format: integer
-        type: number
+        type: integer
       links:
         items:
           $ref: "#/definitions/Link"
@@ -1348,8 +1332,7 @@ definitions:
       message:
         type: string
       message_id:
-        format: integer
-        type: number
+        type: integer
       order_number:
         type: string
       payment_method:

@@ -5,9 +5,9 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **amount** | Option<**f64**> |  | [optional]
-**approval** | Option<**f32**> |  | [optional]
+**approval** | Option<**i32**> |  | [optional]
 **created** | Option<**String**> | The date it was created '2015-04-22T10:03:19.323-07:00' | [optional]
-**id** | Option<**f32**> |  | [optional]
+**id** | Option<**i32**> |  | [optional]
 **message** | Option<**String**> |  | [optional]
 **_type** | Option<**String**> |  | [optional]
 **url** | Option<**String**> |  | [optional]

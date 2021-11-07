@@ -111,7 +111,7 @@ pub async fn payments_post(configuration: &configuration::Configuration, payment
 }
 
 /// Complete a pre-authorized payment. The amount of the transaction to complete must be less than or equal to the original pre-auth amount. Complete must be set to true.
-pub async fn payments_trans_id_completions_post(configuration: &configuration::Configuration, trans_id: f64, payment_request: Option<crate::models::PaymentRequest>) -> Result<crate::models::PaymentResponse, Error<PaymentsTransIdCompletionsPostError>> {
+pub async fn payments_trans_id_completions_post(configuration: &configuration::Configuration, trans_id: i32, payment_request: Option<crate::models::PaymentRequest>) -> Result<crate::models::PaymentResponse, Error<PaymentsTransIdCompletionsPostError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -168,7 +168,7 @@ pub async fn payments_trans_id_get(configuration: &configuration::Configuration,
 }
 
 /// Return payment.
-pub async fn payments_trans_id_returns_post(configuration: &configuration::Configuration, trans_id: f64, _return: crate::models::ModelReturn) -> Result<crate::models::PaymentResponse, Error<PaymentsTransIdReturnsPostError>> {
+pub async fn payments_trans_id_returns_post(configuration: &configuration::Configuration, trans_id: i32, _return: crate::models::ModelReturn) -> Result<crate::models::PaymentResponse, Error<PaymentsTransIdReturnsPostError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -197,7 +197,7 @@ pub async fn payments_trans_id_returns_post(configuration: &configuration::Confi
 }
 
 /// Void a transaction. You can void payments, returns, pre-auths, and completions. It will cancel that transaction.
-pub async fn payments_trans_id_void_post(configuration: &configuration::Configuration, trans_id: f64, void: crate::models::Void) -> Result<crate::models::PaymentResponse, Error<PaymentsTransIdVoidPostError>> {
+pub async fn payments_trans_id_void_post(configuration: &configuration::Configuration, trans_id: i32, void: crate::models::Void) -> Result<crate::models::PaymentResponse, Error<PaymentsTransIdVoidPostError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

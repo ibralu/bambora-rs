@@ -54,7 +54,7 @@ Complete a pre-authorized payment. The amount of the transaction to complete mus
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**trans_id** | **f64** | The transaction id. | [required] |
+**trans_id** | **i32** | The transaction id. | [required] |
 **payment_request** | Option<[**PaymentRequest**](PaymentRequest.md)> |  |  |
 
 ### Return type
@@ -115,7 +115,7 @@ Return payment.
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**trans_id** | **f64** | The transaction id. | [required] |
+**trans_id** | **i32** | The transaction id. | [required] |
 **_return** | [**ModelReturn**](ModelReturn.md) |  | [required] |
 
 ### Return type
@@ -146,7 +146,7 @@ Void a transaction. You can void payments, returns, pre-auths, and completions. 
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**trans_id** | **f64** | The transaction id to void. | [required] |
+**trans_id** | **i32** | The transaction id to void. | [required] |
 **void** | [**Void**](Void.md) |  | [required] |
 
 ### Return type

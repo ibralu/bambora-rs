@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **card** | Option<[**Vec<crate::models::ProfileCards>**](ProfileCards.md)> |  | [optional]
-**code** | Option<**f32**> | digits(2) | [optional]
+**code** | Option<**i32**> | digits(2) | [optional]
 **customer_code** | Option<**String**> | characters(32) | [optional]
 **message** | Option<**String**> | alphanumeric(64) | [optional]
 

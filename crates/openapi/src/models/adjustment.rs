@@ -16,12 +16,12 @@ pub struct Adjustment {
     #[serde(rename = "amount", skip_serializing_if = "Option::is_none")]
     pub amount: Option<f64>,
     #[serde(rename = "approval", skip_serializing_if = "Option::is_none")]
-    pub approval: Option<f32>,
+    pub approval: Option<i32>,
     /// The date it was created '2015-04-22T10:03:19.323-07:00'
     #[serde(rename = "created", skip_serializing_if = "Option::is_none")]
     pub created: Option<String>,
     #[serde(rename = "id", skip_serializing_if = "Option::is_none")]
-    pub id: Option<f32>,
+    pub id: Option<i32>,
     #[serde(rename = "message", skip_serializing_if = "Option::is_none")]
     pub message: Option<String>,
     #[serde(rename = "type", skip_serializing_if = "Option::is_none")]

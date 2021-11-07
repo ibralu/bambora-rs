@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**code** | Option<**f32**> |  | [optional]
+**code** | Option<**i32**> |  | [optional]
 **customer_code** | Option<**String**> | the ID of the payment profile. You need to keep track of this value. | [optional]
 **message** | Option<**String**> |  | [optional]
 
