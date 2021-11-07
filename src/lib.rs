@@ -1,4 +1,5 @@
 pub use openapi::{apis, models};
+pub use header::HeaderMap;
 use openapi::apis::configuration::Configuration;
 use reqwest::Client;
 use reqwest::header;
