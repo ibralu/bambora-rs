@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **order_number** | Option<**String**> | A unique order number. alphanumeric(30) | [optional]
 **payment_method** | **String** | One of (card, token, payment_profile, cash, cheque). characters(20) | 
 **payment_profile** | Option<[**crate::models::ProfilePurchase**](ProfilePurchase.md)> |  | [optional]
+**recurring_payment** | Option<**bool**> |  | [optional]
 **shipping** | Option<[**crate::models::Address**](Address.md)> |  | [optional]
 **term_url** | Option<**String**> | alphanumeric (256) | [optional]
 **token** | Option<[**crate::models::TokenPurchase**](TokenPurchase.md)> |  | [optional]

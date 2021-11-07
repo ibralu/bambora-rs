@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **comments** | Option<**String**> |  | [optional]
 **created** | Option<**String**> | The date it was created '2015-04-22T10:03:19.323-07:00' | [optional]
 **custom** | Option<[**crate::models::Custom**](Custom.md)> |  | [optional]
-**id** | Option<**i32**> |  | [optional]
+**id** | Option<**String**> |  | [optional]
 **links** | Option<[**Vec<crate::models::Link>**](Link.md)> |  | [optional]
 **message** | Option<**String**> |  | [optional]
 **message_id** | Option<**i32**> |  | [optional]

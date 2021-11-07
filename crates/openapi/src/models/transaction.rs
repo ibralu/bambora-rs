@@ -35,7 +35,7 @@ pub struct Transaction {
     #[serde(rename = "custom", skip_serializing_if = "Option::is_none")]
     pub custom: Option<Box<crate::models::Custom>>,
     #[serde(rename = "id", skip_serializing_if = "Option::is_none")]
-    pub id: Option<i32>,
+    pub id: Option<String>,
     #[serde(rename = "links", skip_serializing_if = "Option::is_none")]
     pub links: Option<Vec<crate::models::Link>>,
     #[serde(rename = "message", skip_serializing_if = "Option::is_none")]

@@ -39,6 +39,8 @@ pub struct PaymentRequest {
     pub payment_method: String,
     #[serde(rename = "payment_profile", skip_serializing_if = "Option::is_none")]
     pub payment_profile: Option<Box<crate::models::ProfilePurchase>>,
+    #[serde(rename = "recurring_payment", skip_serializing_if = "Option::is_none")]
+    pub recurring_payment: Option<bool>,
     #[serde(rename = "shipping", skip_serializing_if = "Option::is_none")]
     pub shipping: Option<Box<crate::models::Address>>,
     /// alphanumeric (256)
@@ -61,6 +63,7 @@ impl PaymentRequest {
             order_number: None,
             payment_method,
             payment_profile: None,
+            recurring_payment: None,
             shipping: None,
             term_url: None,
             token: None,

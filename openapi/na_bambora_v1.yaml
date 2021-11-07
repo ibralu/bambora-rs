@@ -929,6 +929,8 @@ definitions:
       payment_profile:
         $ref: "#/definitions/ProfilePurchase"
         description: Payment with a Payment Profile. The payment_method must be 'payment_profile'
+      recurring_payment:
+        type: boolean
       shipping:
         $ref: "#/definitions/Address"
         description: The shipping address
@@ -957,6 +959,7 @@ definitions:
       id:
         description: digits (9)
         type: string
+        required: true
       links:
         items:
           $ref: "#/definitions/Link"
@@ -1013,15 +1016,12 @@ definitions:
   ProfileFromCard:
     properties:
       cvd:
-        default: "123"
         description: Security code on the back of the credit card. This can be set to mandatory in the back office. digits(3)
         type: string
       expiry_month:
-        default: "02"
         description: eg. 02 for February. digits(2)
         type: string
       expiry_year:
-        default: "18"
         description: digits(2)
         type: string
       name:
@@ -1324,7 +1324,8 @@ definitions:
       custom:
         $ref: "#/definitions/Custom"
       id:
-        type: integer
+        type: string
+        required: true
       links:
         items:
           $ref: "#/definitions/Link"
